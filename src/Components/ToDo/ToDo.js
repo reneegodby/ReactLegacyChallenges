@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container} from 'reactstrap';
+import TaskIndex from './TaskIndex';
 
 const ToDo = () => {
   return(
@@ -23,6 +24,7 @@ const ToDo = () => {
             ability to evaluated if a task was completed and update the state
          </li>
        </ul>
+       <TaskIndex/>
        <hr />
      </Container>
   );
