@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import CatList from "./CatList";
+import React, { Component } from "react"; //importing react & component
+import CatList from "./CatList"; //importing catlist component
 
-export default class CatIndex extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+export default class CatIndex extends Component { //declaring a class component
+  constructor(props) {  //a method that stores the default values of state variable
+    super(props); //super is a connecting theme from constructor to parent component(allowing the variables to be used anywhere)(makes it globally available)
+    this.state = {  //initializes setting state for variables
       breeds: [
         "persian",
         "siamese",
@@ -15,14 +15,15 @@ export default class CatIndex extends Component {
         "british shorthair",
         "bengal",
         "american shorthair",
-      ],
+      ], //this whole array is a state variable
     };
   }
 
-  render() {
+  render() { //renders to the dom
     return (
       <div>
-        <CatList breeds={this.state.breeds} />
+        <CatList breeds={this.state.breeds} /> 
+        {/* calling catlist component and sending properties  */}
       </div>
     );
   }
